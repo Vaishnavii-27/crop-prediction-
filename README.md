@@ -8,18 +8,16 @@ The data used to train the model was collected from the crop_prediction dataset.
 
 <img width="1881" height="1721" alt="data_visual1" src="https://github.com/user-attachments/assets/30f0c237-04f8-4ce2-8b06-4b9aa2b66bcc" />
 <img width="861" height="549" alt="correlation_matrix" src="https://github.com/user-attachments/assets/37df21b7-a006-423a-8dcd-1e714e4c3816" />
- The model is built using Deep Neural Networks(DNNs). The architecture we have chosen consists of 3 hidden layers with 64, 128 and 64 neurons respectively, and an output layer of 22 neurons, each corresponding to one type of crop. The algorithm was trained on the data with a 80:20 train-test split ratio. The performance metric used to evaluate the model is accuracy.
 
-Results
-The model achieved an accuracy of 99% on the train data, and an accuracy of about 98% on the test data, indicating a high level of accuracy in its predictions.
+ Model: The model is built using Deep Neural Networks(DNNs). The architecture we have chosen consists of 3 hidden layers with 64, 128 and 64 neurons respectively, and an output layer of 22 neurons, each corresponding to one type of crop. The algorithm was trained on the data with a 80:20 train-test split ratio. The performance metric used to evaluate the model is accuracy.
 
-Testing
-The following data is collected from the end-user to make predictions:
+Results: The model achieved an accuracy of 99% on the train data, and an accuracy of about 98% on the test data, indicating a high level of accuracy in its predictions.
 
+Testing: The following data is collected from the end-user to make predictions:
 N, P, K, pH content of the soil.
 Geolocation (State and District)
 Month(Season) of cultivation
-The geolocation is used to obtain the temperature and humidity values of the place, using appropriate API calls to weather forecasting sites. The following sites were accessed through API calls for climate data:
 
+The geolocation is used to obtain the temperature and humidity values of the place, using appropriate API calls to weather forecasting sites. The following sites were accessed through API calls for climate data:
 Open Weather
 Latitude and Logitude Finder
